@@ -2,16 +2,24 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <h1>About Me</h1>
-        <p id="greetings">Greetings Visitor. Welcome to my Web Site.</p>
-        <p> My name is Mahesh N Gidwani. This Web Site is my submission for Project 0 of the CS50's Web Programming with Python and JavaScript course.</p>
-        <form>
-            <input type="text" placeholder="Full Name" name="name">
-            <button>Submit!</button>
-        </form>
-        <p>Thank you</p>
+      <div class="container">
+        <a href="index.html" class="btn btn-link">About Me</a>
+        <a href="MySpecialities.html" class="btn btn-link">My Specialities</a>
+        <a href="MyInterests.html" class="btn btn-link">My Interests</a>
+        <a href="WhereIHaveLived.html" class="btn btn-link">Where I have Lived</a>
+        <h1>About Me</h1>
+          <p id="greetings">Greetings Visitor. Welcome to my Web Site.</p>
+          <p> My name is Mahesh N Gidwani. This Web Site is my submission for Project 0 of the CS50's Web Programming with Python and JavaScript course.</p>
+          <p class="screen-only"> Please take a moment to sign the Visitor's Register</p>
+          <form class="screen-only">
+              <input type="text" placeholder="Full Name" name="name">
+              <button>Submit!</button>
+          </form>
+          <p class="screen-only">Thank you</p>
+      </div>
     </body>
 </html>
