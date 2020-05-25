@@ -1,0 +1,52 @@
+$button-style: btn-dark;
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #993333;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 48px;
+}
+
+p {
+    color: black;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th[scope="col"] {
+  background: #ccc;
+}
+
+tr:nth-child(even) {
+  background: #eee;
+}
+
+tr:nth-child(odd) {
+  background: #ddd;
+}
+
+#greetings {
+  font-weight: bold;
+  color: black;
+}
+
+@media print {
+  .screen-only {
+    display: none;
+  }
+}
