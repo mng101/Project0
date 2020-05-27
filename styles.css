@@ -1,0 +1,72 @@
+/* line 3, styles.scss */
+html {
+  font-family: Arial, sans-serif;
+}
+
+/* line 7, styles.scss */
+h1 {
+  color: #993333;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 48px;
+}
+
+/* line 15, styles.scss */
+p {
+  color: black;
+}
+
+/* line 19, styles.scss */
+table {
+  width: 75%;
+  border-collapse: collapse;
+  border: 3px solid black;
+  padding: 20px;
+}
+
+/* line 26, styles.scss */
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 31, styles.scss */
+th[scope="col"] {
+  background: #ccc;
+}
+
+/* line 35, styles.scss */
+tr:nth-child(even) {
+  background: #eee;
+}
+
+/* line 39, styles.scss */
+tr:nth-child(odd) {
+  background: #ddd;
+}
+
+/* line 43, styles.scss */
+#greetings {
+  font-weight: bold;
+  color: black;
+}
+
+@media print {
+  /* line 49, styles.scss */
+  .screen-only {
+    display: none;
+  }
+}
+/* line 54, styles.scss */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* line 60, styles.scss */
+.images img {
+  padding: 10px;
+  width: 200px;
+}
