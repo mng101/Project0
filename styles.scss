@@ -1,12 +1,13 @@
 html {
   font-family: Arial, sans-serif;
+  max-width: 750px;
+  margin: auto;
 }
 
 h1 {
     color: #993333;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 48px;
 }
 
@@ -46,13 +47,13 @@ tr:nth-child(odd) {
 @media print {
   .screen-only {
     display: none;
+    padding-top: 50px;
   }
 }
 
 .images {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
 }
 
 .images img {

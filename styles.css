@@ -1,23 +1,24 @@
 /* line 1, styles.scss */
 html {
   font-family: Arial, sans-serif;
+  max-width: 750px;
+  margin: auto;
 }
 
-/* line 5, styles.scss */
+/* line 7, styles.scss */
 h1 {
   color: #993333;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 48px;
 }
 
-/* line 13, styles.scss */
+/* line 14, styles.scss */
 p {
   color: black;
 }
 
-/* line 17, styles.scss */
+/* line 18, styles.scss */
 table {
   width: 75%;
   border-collapse: collapse;
@@ -25,47 +26,47 @@ table {
   padding: 20px;
 }
 
-/* line 24, styles.scss */
+/* line 25, styles.scss */
 th, td {
   padding: 10px;
   text-align: center;
 }
 
-/* line 29, styles.scss */
+/* line 30, styles.scss */
 th[scope="col"] {
   background: #ccc;
 }
 
-/* line 33, styles.scss */
+/* line 34, styles.scss */
 tr:nth-child(even) {
   background: #eee;
 }
 
-/* line 37, styles.scss */
+/* line 38, styles.scss */
 tr:nth-child(odd) {
   background: #ddd;
 }
 
-/* line 41, styles.scss */
+/* line 42, styles.scss */
 #greetings {
   font-weight: bold;
   color: black;
 }
 
 @media print {
-  /* line 47, styles.scss */
+  /* line 48, styles.scss */
   .screen-only {
     display: none;
+    padding-top: 50px;
   }
 }
-/* line 52, styles.scss */
+/* line 54, styles.scss */
 .images {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
 }
 
-/* line 58, styles.scss */
+/* line 59, styles.scss */
 .images img {
   padding: 10px;
   width: 200px;
