@@ -1,24 +1,83 @@
 /* line 1, styles.scss */
 html {
   font-family: Arial, sans-serif;
-  max-width: 750px;
-  margin: auto;
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
 }
 
-/* line 7, styles.scss */
-h1 {
-  color: #993333;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 48px;
+@media (max-width: 766px) {
+  /* line 11, styles.scss */
+  h1 {
+    color: #993333;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
 }
-
-/* line 14, styles.scss */
+@media (min-width: 766px) {
+  /* line 19, styles.scss */
+  h1 {
+    color: #993333;
+    padding-bottom: 20px;
+    font-size: 48px;
+  }
+}
+/* line 26, styles.scss */
 p {
   color: black;
 }
 
-/* line 18, styles.scss */
+/* line 30, styles.scss */
+.description, .lastLine, .visitor {
+  font-family: Arial, sans-serif;
+}
+
+/* line 34, styles.scss */
+.description {
+  font-size: 14px;
+}
+
+/* line 39, styles.scss */
+.lastLine {
+  font-size: 14px;
+  padding-bottom: 50px;
+}
+
+/* line 45, styles.scss */
+.visitor {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 51, styles.scss */
+#greetings {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+/* line 57, styles.scss */
+#navColumn {
+  width: 175px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* line 63, styles.scss */
+.nest {
+  font-size: 14px;
+}
+/* line 65, styles.scss */
+.nest p {
+  font-weight: bold;
+}
+/* line 68, styles.scss */
+.nest ul {
+  font-size: 16px;
+  color: #282899;
+}
+
+/* line 74, styles.scss */
 table {
   width: 75%;
   border-collapse: collapse;
@@ -26,48 +85,49 @@ table {
   padding: 20px;
 }
 
-/* line 25, styles.scss */
+/* line 81, styles.scss */
 th, td {
   padding: 10px;
   text-align: center;
 }
 
-/* line 30, styles.scss */
+/* line 86, styles.scss */
 th[scope="col"] {
   background: #ccc;
 }
 
-/* line 34, styles.scss */
+/* line 90, styles.scss */
 tr:nth-child(even) {
   background: #eee;
 }
 
-/* line 38, styles.scss */
+/* line 94, styles.scss */
 tr:nth-child(odd) {
   background: #ddd;
 }
 
-/* line 42, styles.scss */
-#greetings {
-  font-weight: bold;
-  color: black;
-}
-
 @media print {
-  /* line 48, styles.scss */
+  /* line 99, styles.scss */
   .screen-only {
     display: none;
-    padding-top: 50px;
   }
 }
-/* line 54, styles.scss */
+/* line 104, styles.scss */
 .images {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 59, styles.scss */
+/* line 109, styles.scss */
 .images img {
   padding: 10px;
   width: 200px;
 }
+
+/*
+.row {
+    padding: 1px;
+    margin: 1px;
+    font-size: 12px;
+}
+*/

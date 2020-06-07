@@ -1,33 +1,47 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+      <meta charset="utf-8"/>
+      <title>My Webpage</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
     </head>
     <body>
       <div class="container">
-        <a href="index.html" class="btn btn-dark">About Me</a>
-        <a href="MySpecialities.html" class="btn btn-dark">My Specialities</a>
-        <a href="MyInterests.html" class="btn btn-dark">My Interests</a>
-        <a href="WhereIHaveLived.html" class="btn btn-dark">Where I have Lived</a>
-        <h1>About Me</h1>
-          <p id="greetings">Greetings Visitor. Welcome to my Web Site.</p>
-          <p> My name is Mahesh N Gidwani. This Web Site is my submission for Project 0 of the CS50's Web Programming with Python and JavaScript course.</p>
-          <p>I am an Infrastructure Architect at one of the big banks in Canada. I help in the assessment and design phases
-             of the Infrastructure service delivery model. Partnering across IT and assigned lines of business, I architect
-             enterprise class infrastructure hosting solutions that that best achieve the business's goals around system availability,
-             capacity, security, scalability, and affordability.
-          </p>
-          <p style="margin-bottom: 50px">I have worked with multiple flavors of Unix, Virtualization and Clustering Technologies, Databases,
-             Middleware, Networking and Content Delivery Networks.
-           </p>
-          <p class="screen-only"> Please take a moment to sign the Visitor's Register</p>
-          <form class="screen-only">
-              <input type="text" placeholder="Full Name" name="name">
-              <button>Submit!</button>
-          </form>
-          <p class="screen-only" style="margin-top: 10px">Thank you</p>
+        <div class="row">
+          <div class="col-lg-3 col-sm-4">
+            <div class="list-group list-group-horizontal-sm" id="navColumn">
+              <a class="list-group-item list-group-item-action active" href="index.html">About Me</a>
+              <a class="list-group-item list-group-item-action" href="Myspecialities.html">My Specialities</a>
+              <a class="list-group-item list-group-item-action" href="MyInterests.html">My Interests</a>
+              <a class="list-group-item list-group-item-action" href="WhereIHaveLived.html">Where I have Lived</a>
+            </div>
+          </div>
+          <div class="col-lg-9 col-sm-12">
+            <h1>About Me</h1>
+            <p id="greetings">Greetings Visitor. Welcome to my Web Site.</p>
+            <div class="description">
+              <p> My name is Mahesh N Gidwani. This Web Site is my submission for Project 0 of the CS50's Web Programming with Python and JavaScript course.</p>
+              <p>I am an Infrastructure Architect at one of the big banks in Canada. I help in the assessment and design phases
+                 of the Infrastructure service delivery model. Partnering across IT and assigned lines of business, I architect
+                 enterprise class infrastructure hosting solutions that best achieve the business's goals around system availability,
+                 capacity, security, scalability, and affordability.
+              </p>
+            </div>
+            <p class="lastLine">I have worked with multiple flavors of Unix, Virtualization and Clustering Technologies, Databases,
+                 Middleware, Networking, and Content Delivery Networks.
+            </p>
+            <div class="visitor">
+              <p> Please take a moment to sign the Visitor's Register</p>
+              <form>
+                  <input type="text" placeholder="Full Name" name="name">
+                  <button>Submit!</button>
+              </form>
+              <p style="margin-top: 20px">Thank you</p>
+            </div>
+          </div>
+        </div>
       </div>
     </body>
 </html>

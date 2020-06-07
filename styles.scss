@@ -1,18 +1,74 @@
 html {
   font-family: Arial, sans-serif;
-  max-width: 750px;
-  margin: auto;
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
 }
 
-h1 {
-    color: #993333;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 48px;
+$headColor: #993333;
+
+@media (max-width: 766px) {
+  h1 {
+      color: $headColor;
+      padding-bottom: 10px;
+      font-size: 24px;
+  }
+}
+
+@media (min-width: 766px) {
+  h1 {
+      color: $headColor;
+      padding-bottom: 20px;
+      font-size: 48px;
+  }
 }
 
 p {
     color: black;
+}
+
+%text {
+  font-family: Arial, sans-serif;
+}
+
+.description {
+  @extend %text;
+  font-size: 14px;
+}
+
+.lastLine {
+  @extend %text;
+  font-size: 14px;
+  padding-bottom: 50px;
+}
+
+.visitor {
+  @extend %text;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#greetings {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+#navColumn {
+  width: 175px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.nest {
+  font-size: 14px;
+  p{
+    font-weight: bold;
+  }
+  ul {
+    font-size: 16px;
+    color: #282899;
+  }
 }
 
 table {
@@ -39,15 +95,9 @@ tr:nth-child(odd) {
   background: #ddd;
 }
 
-#greetings {
-  font-weight: bold;
-  color: black;
-}
-
 @media print {
   .screen-only {
     display: none;
-    padding-top: 50px;
   }
 }
 
@@ -60,3 +110,10 @@ tr:nth-child(odd) {
     padding: 10px;
     width: 200px;
 }
+/*
+.row {
+    padding: 1px;
+    margin: 1px;
+    font-size: 12px;
+}
+*/
