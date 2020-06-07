@@ -1,3 +1,5 @@
+// Global formatting RuleSets
+//
 html {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -5,8 +7,23 @@ html {
   font-size: 16px;
 }
 
+p {
+    color: black;
+}
+
+// Exanple of a variable
+//
 $headColor: #993333;
 
+// Example of Page heading for large and small screens
+//
+@media (min-width: 766px) {
+  h1 {
+      color: $headColor;
+      padding-bottom: 20px;
+      font-size: 48px;
+  }
+}
 @media (max-width: 766px) {
   h1 {
       color: $headColor;
@@ -15,51 +32,41 @@ $headColor: #993333;
   }
 }
 
-@media (min-width: 766px) {
-  h1 {
-      color: $headColor;
-      padding-bottom: 20px;
-      font-size: 48px;
-  }
-}
-
-p {
-    color: black;
-}
-
+// Example of SCSS nesting
+//
 %text {
   font-family: Arial, sans-serif;
 }
-
 .description {
   @extend %text;
   font-size: 14px;
 }
-
 .lastLine {
   @extend %text;
   font-size: 14px;
   padding-bottom: 50px;
 }
-
 .visitor {
   @extend %text;
   font-size: 12px;
   font-weight: bold;
 }
 
+// Example of #id selector
+//
 #greetings {
   font-weight: bold;
   color: black;
   font-size: 16px;
 }
-
 #navColumn {
   width: 175px;
   font-size: 12px;
   padding: 10px;
 }
 
+// Example of SCSS nesting
+//
 .nest {
   font-size: 14px;
   p{
@@ -71,49 +78,50 @@ p {
   }
 }
 
+// Example of Table format
+//
 table {
     width: 75%;
     border-collapse: collapse;
     border: 3px solid black;
     padding: 20px;
 }
-
+// Formatting table header and table data
 th, td {
   padding: 10px;
   text-align: center;
 }
-
+// Table header background
 th[scope="col"] {
   background: #ccc;
 }
-
+// Table background even rows
 tr:nth-child(even) {
   background: #eee;
 }
-
+// Table backgroup odd rows
 tr:nth-child(odd) {
   background: #ddd;
 }
 
+// Example of @media to hide sections of the page on print output
+//
 @media print {
   .screen-only {
     display: none;
   }
 }
 
+// General properties for the "images" class
+//
 .images {
     display: flex;
     flex-wrap: wrap;
 }
 
+// Formating for imageserver
+//
 .images img {
     padding: 10px;
     width: 200px;
 }
-/*
-.row {
-    padding: 1px;
-    margin: 1px;
-    font-size: 12px;
-}
-*/
