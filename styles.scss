@@ -107,7 +107,13 @@ tr:nth-child(odd) {
 // Example of @media to hide sections of the page on print output
 //
 @media print {
-  .screen-only {
+  #navColumn {
+    display: none;
+  }
+}
+
+@media print {
+  .visitor {
     display: none;
   }
 }

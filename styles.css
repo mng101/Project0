@@ -108,17 +108,23 @@ tr:nth-child(odd) {
 
 @media print {
   /* line 110, styles.scss */
-  .screen-only {
+  #navColumn {
     display: none;
   }
 }
-/* line 117, styles.scss */
+@media print {
+  /* line 116, styles.scss */
+  .visitor {
+    display: none;
+  }
+}
+/* line 123, styles.scss */
 .images {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 124, styles.scss */
+/* line 130, styles.scss */
 .images img {
   padding: 10px;
   width: 200px;
